@@ -1,0 +1,157 @@
+transition(transition)
+  -moz-transition: transition;
+  -o-transition: transition;
+  -webkit-transition: transition;
+  transition: transition;
+  
+@import url(reset.css);
+@import url(grid.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+html
+  font-size: 10px;
+
+body
+  font-size: 1.6rem;
+
+a
+  color: #333; 
+.header
+  background-color: #2980b9;
+  border-top: 3px solid #3C6A88;
+/* search form */  
+.search_form
+  margin-top: 1rem;
+  text-align: right;
+  position: relative;
+
+.search_form input
+.search_form button
+  padding: 0.5rem;
+
+.search_form
+  input
+    background: rgba(255,255,255,0.4);
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    padding-right: 2.5rem;
+.search_form button
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+.search_form input::-webkit-input-placeholder
+.search_form input:-moz-placeholder
+.search_form input::-moz-placeholder
+.search_form input:-ms-input-placeholder
+  color: rgba(255,255,255,0.8);
+
+/* top menu */
+
+.top_menu li
+  display: inline-block;
+.top_menu li a
+  color: #fff;
+  display: block;
+  padding: 0 1.5rem;
+  line-height: 5rem;
+.resonsive
+  display: none;
+  padding: 2rem 0;
+.resonsive a
+  color: #fff;
+  font-size: 2rem;
+.top_menu li a:hover
+  text-decoration: none;
+  background-color: #3498db;
+.dropdown
+  position: relative;
+.dropdown_menu
+  position: absolute;
+  background-color: #3498db;
+  display: none;
+  width: 25rem;
+.dropdown_menu li a
+  line-height: 4rem;
+.top_menu  .dropdown a:hover + .dropdown_menu
+.dropdown_menu:hover
+  display: block;
+.top_menu .dropdown>a:after
+  font-family: FontAwesome;
+  content: "\f107";
+  margin-left: 5px;
+
+/* slider */
+ .slider
+  background: url(../img/slide.jpg) #ccc center no-repeat;
+  background-size: cover;
+  height: 30rem;
+.slogan
+  height: 15rem;
+  padding: 2rem 0 0 2rem;
+  color: #fff;
+  font-size: 2rem;
+.slogan span
+  font-size: 80%;
+  display: block;
+  margin-top: 1rem;
+.yellow
+  background: #f39c12;
+.green
+  background: #2ecc71;
+  
+/* service*/
+.service
+  padding: 1rem;
+  color: #2980b9;
+.service:hover
+  background-color: #2980b9;
+  color: #9CD1F5;
+.service:hover p
+.service:hover a
+  color: #fff;
+  transition(all 0.5s ease)
+.service
+  .icon
+    text-align: center;
+    padding: 5rem;
+    font-size: 5rem;
+.service a
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-align: center;
+/* footer */
+.footer
+  background-color: #ccc;
+  height: 3rem;
+  line-height: 3rem
+  
+/* responsive */
+@media (max-width: 768px)
+  .slider
+  .slogan
+    margin-bottom: 20px;
+  .top_menu
+    display: none;
+  .search_form
+    display: none;
+  .resonsive
+    display: block;
+  .resonsive:hover + .top_menu
+    display: block;
+  .top_menu li
+  .top_menu:hover
+  	display: block;
+
+
+  
+
+  

@@ -1,0 +1,54 @@
+border-box()
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	
+.container
+  width: 100%;
+  margin-left: auto;
+  padding: 0 1rem;
+
+.row
+  margin: 0 1rem 1rem 1rem
+  *zoom: 1;
+  zoom: 1;
+
+.row:before
+.row:after
+  content: "";
+  display: table;
+
+.row:after
+  clear: both;
+
+[class*='col-']
+  float: left;
+  padding: 0 1rem;
+  border-box();	
+  
+/* cols */
+		
+for $n in 1..12
+  .col-{$n}
+    width: (100% / 12) * $n
+    
+/* offsets */
+
+for $n in 1..12
+  .offset-{$n}
+    margin-left: (100% / 12) * $n
+    
+  
+/* responsive планшеты */    
+@media (max-width: 768px)
+  for $n in 1..12
+    .col-md-{$n}
+      width: (100% / 12) * $n
+
+/* responsive смартфоны */  
+@media (max-width: 480px)
+  for $n in 1..12
+    .col-sm-{$n}
+      width: (100% / 12) * $n
